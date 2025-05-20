@@ -7,7 +7,7 @@ public class DuplicateWordsRemoval {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string : ");
         String str = sc.nextLine();
-        String[] inputArr = str.split(" ");
+        String[] inputArr = str.split(" +");
         Set<String> mySet = new LinkedHashSet<String>();
 
         for (String x : inputArr) {
@@ -15,7 +15,7 @@ public class DuplicateWordsRemoval {
         }
         Iterator itr = mySet.iterator();
         while (itr.hasNext()) {
-            System.out.print(itr.next() + " ");
+            System.out.print(itr.next().toString().trim() + " ");
         }
 
     }

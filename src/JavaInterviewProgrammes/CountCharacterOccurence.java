@@ -7,6 +7,7 @@ public class CountCharacterOccurence {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String : ");
         String str=sc.nextLine();
+        sc.close();
 
         int result=str.length()-str.replaceAll("a","").length();
         System.out.println("No of characters : " +result);

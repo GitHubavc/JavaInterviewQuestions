@@ -10,6 +10,7 @@ public class AnagramStrings {
         String str1 = sc.nextLine();
         System.out.println("Enter the Second string: ");
         String str2 = sc.nextLine();
+        sc.close();
 
         char[] arr1 = str1.toLowerCase().toCharArray();
         char[] arr2 = str2.toLowerCase().toCharArray();

@@ -34,7 +34,7 @@ public class DuplicatesInArrayHashset {
         }
         for(Integer num:hm.keySet()){
             if(hm.get(num)>1){
-                System.out.println("Duplicate element via hashset is : "+num);
+                System.out.println("Duplicate element via hashmap is : "+num);
             }
         }
     }
